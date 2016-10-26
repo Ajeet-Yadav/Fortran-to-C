@@ -4,7 +4,7 @@
 #include<stdio.h>
 
 
-#define SHELLSCRIPT "rsync -r /home/acer571/Documents/seminarmine/ /home/acer571/Documents/fortran/ "
+#define SHELLSCRIPT "rsync -r /home/acer571/Documents/seminarmine/ /home/acer571/Documents/fortran/"
 
 
 
