@@ -261,7 +261,7 @@ c        c3=1.0d0
       call coef(ak,akC,nx,ny,nz,dt)
       call coef2 (ak2,akC2,nx,ny,nz,dt)
 
-         do i = 1, nx
+         do i = 1, nx, j
          x = dfloat(i-nx/2)*dx
          do j= 1,ny
          y= dfloat(j-ny/2)*dy
