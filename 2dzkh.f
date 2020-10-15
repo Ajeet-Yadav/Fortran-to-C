@@ -5,7 +5,7 @@
    
       implicit none
       
-      integer*4 nt, mx,my,nx,ny
+      integer*4 nt, mx,my,nx,ny,jj
       integer*4 ndg, ndg1, ndg2
       integer*4 ntd
       parameter (nt =20, mx =6, nx = 2**mx)
