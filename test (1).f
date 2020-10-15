@@ -711,7 +711,7 @@ c  File names
 
     
 
-         do i = 1, n
+         do i = 1, n, j
             x = dfloat(i-n/2)*dx
              te(i) = dcmplx(
      .             a0*(1.d0+beta*dcos(alf*x)),
