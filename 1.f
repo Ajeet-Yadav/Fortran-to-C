@@ -18,6 +18,8 @@
       complex*16 d(nx,ny,nz),ad(nx,ny,nz), bd(nx,ny,nz)
       complex*16 b2(nx,ny,nz),ab2(nx,ny,nz), bb2(nx,ny,nz)
       complex*16 fe(nx,ny,nz),fd(nx,ny,nz)
+      complex*16 fe(nx,ny,nz),fd1(nx,ny,nz)
+      complex*16 fe(nx,ny,nz),fd2(nx,ny,nz)
       complex*16 ak(nx,ny,nz), ak2(nx,ny,nz)
       complex*16 akC(nx,ny,nz),akC2(nx,ny,nz)
       complex*16 feC(nx,ny,nz),fdC(nx,ny,nz)
@@ -62,7 +64,7 @@
       character*4 f11,f12,f13,f14,f15,f16,f17,f18,f19,f20
       common /kw/ kx,ky,kz/k2/kx2,ky2,kz2/ykw/ykxw,ykyw,ykzw
       common /ykw2/ ykxw2,ykyw2,ykzw2
-      common /te/ te /td/ td
+      common /te/ te /td/ td / fd1
       common /xe/ xe /xd/ xd
       common /norm/ nrmx,nrmy,nrmz
       common /step/ dx,dy,dz
@@ -188,6 +190,15 @@ c        c3=1.0d0
       f19 = 'nd00'
       call filen(f19,4)
       open(34, file = f19)
+      
+      fd1 = 'nfd00'
+      call filen(f20,4)
+      open(35, file = f20)
+      
+      fd2 = 'nfd100'
+      call filen(f21,4)
+      open(35, file = f21)
+      
                        
 
 
