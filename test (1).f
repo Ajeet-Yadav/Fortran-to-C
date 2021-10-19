@@ -134,6 +134,13 @@ c      open(30, file = f8)
        f7 = 'prm00'
       call filen(f7, 5)
       open(15, file = f7)
+      
+      fd1 = 'nfd00'
+      call filen(f20,4)
+      open(35, file = f20)
+      fd2 = 'nfd00'
+      call filen(f20,4)
+      open(35, file = f20)
 
 
       write(15,9000) nt
