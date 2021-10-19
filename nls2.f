@@ -138,6 +138,13 @@ c      sd   =5041
       f9 = 'ew01'
       call filen(f9, 4)
       open(29, file = f9)
+      
+      fd1 = 'nfd00'
+      call filen(f20,4)
+      open(35, file = f20)
+      fd2 = 'nfd00'
+      call filen(f20,4)
+      open(35, file = f20)
 
       write(15,9000) nt
 
