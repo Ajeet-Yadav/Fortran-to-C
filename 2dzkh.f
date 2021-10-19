@@ -159,7 +159,15 @@
 
       f13 = 'fz00'
       call filen(f13, 4)
-      open(32, file = f13)                                                                          
+      open(32, file = f13) 
+      
+      fd1 = 'nfd00'
+      call filen(f20,4)
+      open(35, file = f20)
+      
+      fd2 = 'nfd00'
+      call filen(f20,4)
+      open(35, file = f20)
 
       write(15,9000) nt
 9000  format(' nt   = ', i6)
